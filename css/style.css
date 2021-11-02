@@ -10,12 +10,14 @@
 }
 
 .row{
-    clear: both;
-    content: " ";
-    display: table;
-    width: 100%;
     background-color: #0885f9;
-    padding: 20px 0;
+    padding-bottom:20px;
+}
+
+.row::after{
+    clear: both;
+    content: "";
+    display: table;
 }
 
 header{
@@ -40,12 +42,14 @@ footer{
 }
 
 .top-main{
+    width: 100%;
     background-color: #abcce4;
     height: 100px;
+    margin-bottom: 20px;
 }
 
 /* ----START 3 COLUMN---- */
-.left-col, .right-col, .central-col{
+.fl{
     float: left;
 }
 
